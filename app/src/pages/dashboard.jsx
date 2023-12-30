@@ -11,27 +11,11 @@ import { useHistory } from 'react-router-dom'
 export const Dashboard = () => {
   const history = useHistory()
   const [connecting, setConnecting] = useState(false)
-  const { select } = useWallet()
+  const { connected, select } = useWallet()
   const [postTitle, setPostTitle] = useState("")
   const [postContent, setPostContent] = useState("")
 
-  // Static Data
-  const user = {
-    name: "Random Robot",
-    avatar: "https://avatarfiles.alphacoders.com/283/thumb-283778.jpg",
-  }
-  const connected = true
-  const posts = []
-
-  const createPost = () => {
-
-  }
-
-  const showModal = false
-  const setShowModal = () => {
-
-  }
-  /////////////////
+  const {user, initialized, initUser, showModal, setShowModal, createPost, posts} = useBlog()
 
   const onConnect = () => {
     setConnecting(true)
@@ -51,33 +35,40 @@ export const Dashboard = () => {
           <h2 className="text-2xl font-bold">
             <div className="bg-clip-text bg-gradient-to-br from-indigo-300 colorpink"
             >
-              Onaki
+              SpaceBlog
             </div>
           </h2>
           {connected ? (
-            <div className="flex items-center">
-              <p className=" font-bold text-sm ml-2 capitalize underlinepink">
-                Home
-              </p>
-              <p className=" font-bold text-sm ml-2 capitalize mr-4 underlinepink">
-                Blog
-              </p>
+            <div className="flex items-center"> 
               <img
                 src={user?.avatar}
                 alt="avatar"
                 className="w-8 h-8 rounded-full bg-gray-200 shadow ring-2 ring-indigo-400 ring-offset-2 ring-opacity-50"
-              />
-              <p className=" font-bold text-sm ml-2 capitalize">
-                {user?.name}
-              </p>
-              <Button
-                className="ml-3 mr-2"
-                onClick={() => {
-                  setShowModal(true)
-                }}
-              >
-                Create Post
-              </Button>
+                />
+                <p className=" font-bold text-sm ml-2 capitalize">
+                  {user?.name}
+                </p>
+              {initialized ? (
+                
+                <Button
+                  className="ml-3 mr-2"
+                  onClick={() => {
+                    setShowModal(true)
+                  }}
+                >
+                  Create Post
+                </Button>  
+              ) : (
+                <Button
+                  className="ml-3 mr-2"
+                  onClick={() => {
+                    initUser()
+                  }}
+                >
+                  Initialize User
+                </Button>  
+              )}
+              
             </div>
           ) : (
             <Button
