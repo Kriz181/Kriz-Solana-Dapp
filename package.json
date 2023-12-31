@@ -8,9 +8,9 @@
   "dependencies": {
     "@project-serum/anchor": "^0.16.1",
     "@solana/wallet-adapter-base": "^0.6.0",
-    "@solana/wallet-adapter-react": "^0.12.2",
-    "@solana/wallet-adapter-react-ui": "^0.4.2",
-    "@solana/wallet-adapter-wallets": "^0.10.0",
+    "@solana/wallet-adapter-react": "^0.15.35",
+    "@solana/wallet-adapter-react-ui": "^0.9.34",
+    "@solana/wallet-adapter-wallets": "^0.19.24",
     "rxjs": "^7.3.0"
   },
   "devDependencies": {
