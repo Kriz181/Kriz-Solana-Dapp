@@ -39,7 +39,7 @@ export const BlogProvider = ({ children }) => {
       const provider = new anchor.AnchorProvider(connection, anchorWallet, anchor.AnchorProvider.defaultOptions())
       return new anchor.Program(idl, PROGRAM_KEY, provider)
     }
-  }, [connection, anchorWallet])
+  }, [connection, anchorWallet]) 
 
   useEffect(() => {
     const start = async () => {
