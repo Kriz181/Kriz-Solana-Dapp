@@ -55,13 +55,12 @@ export const FullPost = () => {
       <div className="entry-meta">
         <p>
           <span className="author">
-            Written by <a href="#">Lavi Perchik</a>
           </span>{" "}
-          <span className="date">Monday, July 9, 2018</span>
+          <span className="entry-content">{id.toString()}</span>
         </p>
-      </div>
-      <div className="entry-content">
+        <div className="author">
         <p>{post?.content}</p>
+      </div>
       </div>
     </article>
   );

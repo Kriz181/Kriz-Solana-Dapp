@@ -30,7 +30,7 @@ export const Dashboard = () => {
 
   return (
     <div className="dashboard background-color overflow-auto h-screen">
-      <header className="fixed z-10 w-full h-14  shadow-md">
+      <header className="fixed z-10 w-full h-14 pl-12 pr-12 shadow-md">
         <div className="flex justify-between items-center h-full container">
           <h2 className="text-2xl font-bold">
             <div className="bg-clip-text bg-gradient-to-br from-indigo-300 colorpink"
@@ -106,13 +106,13 @@ export const Dashboard = () => {
               <div
                 className="best-post-image"
                 style={{
-                  backgroundImage: `url("https://user-images.githubusercontent.com/62637513/184338364-a14b7272-d1dc-49f3-9f43-3ac37dacbe85.png")`,
+                  backgroundImage: `url("https://images.unsplash.com/photo-1510906594845-bc082582c8cc?q=80&w=2044&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
                 }}
               ></div>
               <div className="best-post-content">
-                <div className="best-post-content-cat">December 2, 2021<span className="dot"> </span>Blog</div>
+                <div className="best-post-content-cat">Space<span className="dot"> </span>Blog</div>
                 <div className="best-post-content-title">
-                  Lorem ipsum dolor sit amet, consectetur
+                  Welcome to Space Blog!
                 </div>
                 <div className="best-post-content-sub">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -133,12 +133,12 @@ export const Dashboard = () => {
                       <div
                         className="post__card__image-2"
                         style={{
-                          backgroundImage: `url("https://user-images.githubusercontent.com/62637513/184338539-9cdbdc58-1e72-4c48-8203-0b7ec23d3eb0.png")`,
+                          backgroundImage: `url("https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
                         }}
                       ></div>
                       <div>
                         <div className="post__card_meta-2">
-                          <div className="post__card_cat">December 2, 2021<span className="dot"> </span>{item.account.title} </div>
+                          <div className="post__card_cat">{item.publicKey.toString()}<span className="dot"> </span>{item.account.title} </div>
                           <p className="post__card_alttitle-2">
                             {item.account.content}
                           </p>

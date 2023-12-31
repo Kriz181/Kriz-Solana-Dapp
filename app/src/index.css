@@ -22,6 +22,8 @@ body {
 .dashboard-main {
   min-height: calc(100vh - 56px);
   padding-top: 56px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .dashboard-aside {

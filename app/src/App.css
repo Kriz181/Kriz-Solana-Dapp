@@ -40,6 +40,7 @@ a {
   margin-bottom: 40px;
   border-radius: 4px;
   transition: 1s;
+  flex-direction: column;
 }
 
 .best-post-image {
@@ -69,7 +70,7 @@ a {
   text-align: center;
   line-height: 1.5;
   font-size: 15px;
-  color: #725c7a;
+  color: #605c7a;
 }
 
 .best-post-content-title {
@@ -81,7 +82,7 @@ a {
 .best-post-content-sub {
   font-size: 15px;
   line-height: 1.4;
-  color: #725c7a;
+  color: #605c7a;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
@@ -141,7 +142,7 @@ a {
 }
 
 .post__card_alttitle-2 {
-  color: #725c7a;
+  color: #605c7a;
   margin: 0;
   line-height: 1.5;
   font-size: 1.125rem;
@@ -191,7 +192,7 @@ a {
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 .pink {
-  background-color: #f806cc;
+  background-color: #3232f2;
 }
 .colorpink {
   color: #bdbdbd;
@@ -204,12 +205,12 @@ a {
   width: 10px;
   margin-right: 10px;
   margin-left: 10px;
-  background-color: #f806cc;
+  background-color: #3232f2;
   border-radius: 50%;
   display: inline-block;
 }
 .underlinepink:hover {
-  border-bottom: 1px solid #f806cc;
+  border-bottom: 1px solid #3232f2;
 }
 
 img {
@@ -248,7 +249,7 @@ a {
 }
 .author,
 .date {
-  color: #f806cc;
+  color: #ffffff;
 }
 .author + .date:before {
   content: " | ";
