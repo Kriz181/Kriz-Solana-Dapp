@@ -34,7 +34,7 @@ export const BlogProvider = ({ children }) => {
   const { connection } = useConnection()
   const { publicKey } = useWallet()
 
-  const program = useMemo(() => {
+  const program = useMemo(() => { 
     if(anchorWallet) {
       const provider = new anchor.AnchorProvider(connection, anchorWallet, anchor.AnchorProvider.defaultOptions())
       return new anchor.Program(idl, PROGRAM_KEY, provider)
