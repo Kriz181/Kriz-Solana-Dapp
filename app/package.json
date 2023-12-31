@@ -1,7 +1,10 @@
 {
   "name": "app",
-  "version": "10.2.3",
+  "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
